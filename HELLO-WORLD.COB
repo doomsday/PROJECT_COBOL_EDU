@@ -10,5 +10,9 @@
        PROCEDURE DIVISION.
        Begin.
        COMPUTE afterTax ROUNDED = beforeTax + (beforeTax * salesTaxRate)
-       DISPLAY "After tax amount is " afterTax
+       PERFORM DisplayGreeting 10 TIMES.
        STOP RUN.
+
+       DisplayGreeting.
+       DISPLAY "After tax amount is " afterTax.
+       
