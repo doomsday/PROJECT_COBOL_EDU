@@ -5,11 +5,11 @@
        WORKING-STORAGE SECTION.
        01 FirstNum      PIC 9       VALUE ZEROS.
        01 SecondNum     PIC 9       VALUE ZEROS.
-       01 CalcResult    PIC 9       VALUE 0.
-       01 UserPrompt    PIC X(38)   VALUE
+       01 CalcResult    PIC 99      VALUE 0.
+       01 UserPrompt    PIC A(38)   VALUE
       -                 "Please enter two single digit numbers".
        PROCEDURE DIVISION.
-       CalculateResult.
+       Begin.
            DISPLAY UserPrompt
            ACCEPT FirstNum
            ACCEPT SecondNum

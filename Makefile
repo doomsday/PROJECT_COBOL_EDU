@@ -16,5 +16,11 @@ GREETING: GREETING.COB
 DO-CALC: DO-CALC.COB
 	$(COBC) $(COBCOPTS_1) DO-CALC.COB
 
+PUZZLE: PUZZLE.COB
+	$(COBC) $(COBCOPTS_1) PUZZLE.COB
+
+CONDITION-NAME: CONDITION-NAME.COB
+	$(COBC) $(COBCOPTS_1) CONDITION-NAME.COB
+
 # test: TAX
 # 	@sh -c 'if (./TAX | grep -q "Hello, world"); then echo "All is well."; else echo "Ya dun goofed."; fi'

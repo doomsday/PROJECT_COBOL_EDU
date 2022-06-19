@@ -1,9 +1,7 @@
-.vscode
-*.i
-*.h
-*.c
-TAX
-ENTER-NAME
-DO-CALC
-GREETING
-SHORTEST-PROGRAM
+# Ignore everything
+*
+
+# But not these
+!.gitignore
+!*.COB
+!Makefile
