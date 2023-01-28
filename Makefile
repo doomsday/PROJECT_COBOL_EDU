@@ -1,5 +1,6 @@
-COBC=cobc
+COBC=cobol
 COBCOPTS_1 = -fixed -x -O --std=ibm-strict
+# COBCOPTS_1 = -fixed -x -O --std=cobol2002
 
 TAX: TAX.COB
 	$(COBC) $(COBCOPTS_1) TAX.COB
@@ -21,6 +22,9 @@ PUZZLE: PUZZLE.COB
 
 CONDITION-NAME: CONDITION-NAME.COB
 	$(COBC) $(COBCOPTS_1) CONDITION-NAME.COB
+
+DRAFT: DRAFT.COB
+	$(COBC) $(COBCOPTS_1) DRAFT.COB
 
 # test: TAX
 # 	@sh -c 'if (./TAX | grep -q "Hello, world"); then echo "All is well."; else echo "Ya dun goofed."; fi'
