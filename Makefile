@@ -26,5 +26,11 @@ CONDITION-NAME: CONDITION-NAME.COB
 DRAFT: DRAFT.COB
 	$(COBC) $(COBCOPTS_1) DRAFT.COB
 
+ACCEPT-DATE: ACCEPT-DATE.COB
+	$(COBC) $(COBCOPTS_1) ACCEPT-DATE.COB
+
+ARITHMETIC: ARITHMETIC.COB
+	$(COBC) $(COBCOPTS_1) ARITHMETIC.COB
+
 # test: TAX
 # 	@sh -c 'if (./TAX | grep -q "Hello, world"); then echo "All is well."; else echo "Ya dun goofed."; fi'

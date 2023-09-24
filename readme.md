@@ -1,11 +1,9 @@
 # CONFIGURING COBOL DEVELOPMENT ENVIRONMENT ON WINDOWS
 
-1. Install MinGW
-1. [Download](https://www.arnoldtrembley.com/GnuCOBOL.htm) GnuCOBOL binaries for Windows
-1. Unpack binaries to `C:\MinGW\share\gnucobol` (`\bin`, `\config` etc.)
-1. Create and place `cobol.bat` to `C:\MinGW\bin`
-1. Add `C:\MinGW\share\gnucobol\bin` to `%PATH%`
-
+* Install MinGW
+* [Download](https://www.arnoldtrembley.com/GnuCOBOL.htm) GnuCOBOL binaries for Windows
+* Unpack binaries to `C:\MinGW\share\gnucobol` (`\bin`, `\config` etc.)
+* Create and place `cobol.bat` to `C:\MinGW\share\gnucobol\bin`
 ```bat
 @echo off
 
@@ -22,8 +20,15 @@ rem Start the compiler
 
 cobc -x %*
 ```
+* Add `C:\MinGW\share\gnucobol\bin` to `%PATH%`
 
 Now you can build COBOL sources this way:
 ```cmd
 cobol -fixed -x -O --std=ibm-strict DRAFT.COB
+```
+
+# USING 'Makefile'
+```cmd
+make
+make DRAFT
 ```

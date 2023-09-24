@@ -16,4 +16,3 @@
 
        DisplayGreeting.
            DISPLAY "After tax amount is " afterTax.
-       
